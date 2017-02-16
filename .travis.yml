@@ -1,9 +1,18 @@
 sudo: required
-
 language: c
-
 services:
-  - docker
-
+- docker
 script:
-  - make all
+- make all
+deploy:
+  provider: releases
+  api_key:
+    secure: CFBRyDdXaclCA6VVwrnOuSrT7NQQHLOzilcAAmE0minLi7IqINOpbEwEaNLl3Mi1WqvI2y2BT9XPPq0D902YdPNszIuulAR/fP6m4cTX78RDMq2s+bVv8hb98XeiSW3//J4LiUOg4jnR7Uyd2f1fsTtY3NnLWO2RNk1rbRoCD7CvMNZVrD3pWoyy+1X9bA9fJ0atDlWMXID/eBYi9nu/pbXa6jJMnt3CnuxuOgN763ydlMANeOl66k3OB2pyU7wvdQrsfO6hKuDNEoL4QF+nhKlAuiowNf194BlB2BqQT1dNI5FacmgbdQPT3R7fJ3hXDmprm3mfA2btZ6nDV6EHHgzC28FZ4oSs7P6S4r3hLelPN6T3LqSxVHEv7ODD3na3BrqPnnRFRaHzR/SKYmr2GTDRBUfBG3y70iLZlvll9W5F+qpdpSl0YPWkUNdVypwNguloTwCSNI6pWiKKp2LGxb+iRJAooP9/WXVpHTLA3FzyBEPj2kUBsVEDQYkO9dldPL0k2vwb3/e3UxtbMtYbHskrmU3krRj0ec6eccFNfCamcrPTSAmzD2Va/z5kVb1zhwHHjIChdOdcLZGal/UArN6oI0UyaWILIU72d34EgunzPaUd5Rmdt8mZrVVcx1jBhp5duwOf/hBTGpCJhLbPgmx8t77LxTNdBq1vMhbUCV0=
+  file:
+    - centos6py27/python27-2.7.13-1.el6.x86_64.rpm
+    - centos6py36/python36-3.6.0-1.el6.x86_64.rpm
+    - centos7py27/python27-2.7.13-1.el7.x86_64.rpm
+    - centos7py36/python36-3.6.0-1.el7.x86_64.rpm
+  skip_cleanup: true
+  on:
+    tags: true
