@@ -2,6 +2,8 @@
 
 static-linked python installer package
 
+![Build Status](https://travis-ci.org/nobonobo/build-python-rpm.svg?branch=master)
+
 - prefix: /usr/local
 
 ## python 2.7 install for CentOS6/RedHat6
