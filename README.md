@@ -1,4 +1,4 @@
-# Python 2.7 RPM package for CentOS/RedHat 6.x or 7.x
+# Python RPM package for CentOS/RedHat 6.x or 7.x
 
 static-linked python installer package
 
