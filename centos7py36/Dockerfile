@@ -12,7 +12,7 @@ RUN bash -c "source /etc/profile.d/rvm.sh;gem install --no-ri --no-rdoc fpm"
 RUN yum -y install openssl-devel readline-devel\
     bzip2-devel sqlite-devel zlib-devel ncurses-devel\
     db4-devel expat-devel gdbm-devel
-ENV BUILD_VER=3.6.0
+ENV BUILD_VER=3.6.2
 ENV DLURL=http://python.org/ftp/python/${BUILD_VER}/Python-${BUILD_VER}.tgz
 RUN mkdir -p /build; cd /build\
     && curl -L ${DLURL} | tar xz
