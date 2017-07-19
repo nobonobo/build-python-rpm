@@ -1,4 +1,4 @@
-TARGET:=python36-3.6.0
+TARGET:=python36-3.6.2
 OUTPUT:=$(TARGET)-1.el7.x86_64.rpm
 build: $(OUTPUT)
 
