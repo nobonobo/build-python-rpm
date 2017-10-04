@@ -10,9 +10,9 @@ deploy:
     secure: "5I3Bd/rX6P1Y1pKF6/zNyxegcCFyaDFRroqI54s6OIWNEcWcQPagu81ux9rlUJhHhkyIHaBeEHtkx2mPC6/sS1Kv753B83W+buDgTiHIL7/Bmg6rAmqkaou+FppnXQa182hFYOy5cxdVZ94tSNghdYrIdVLtKX0DgVA6mkvm3hkLoi7vnuurmw4cnwo80GwaZY+p2bprbCtZYMi5md5FbxjJw1WWw5C0IxqzcLV3l+JdVVN/YzUfuUZJUwq1ldv65R805wbb6CZtSFlZ0+N1w329+NhdPuMO+qtiBrKmCTUoP2UMnBuROr8Y/sLtbyg3IlWoHvhB3tds3p3W2U26n4pb2Wkb48G1N5nYJRgt8cB3ITLhlKp8Cou+FqEtJfqUS/YV5qFt5Zr0yEL/Jbsgv7A6YKJ2qLGOnC4XYEVeQWLULN6t/Z67N+Kkw9b1AJIszr6FKVB2S0fy5QAFTgdbGsFEamsw7PAMc2FU6am+NvBDVgnYtVawndT4OYlnuqbceq37GlffmHzy/3w1sjBrUImqDhYyHL9xtcx3b1XDE+s/1U+AA6XYaRK4rRhb27LLdswMMTNq/GIEkLRKsMlzkTPXMIZpwgczKf/YyyUxutrDgUtVNhgu07fFyPMWsSS4yKLXY4slz56DTJAJyottbGM4kI/dlmrHqabMEmXEvu4="
   file:
     - centos6py27/python27-2.7.13-1.el6.x86_64.rpm
-    - centos6py36/python36-3.6.2-1.el6.x86_64.rpm
+    - centos6py36/python36-3.6.3-1.el6.x86_64.rpm
     - centos7py27/python27-2.7.13-1.el7.x86_64.rpm
-    - centos7py36/python36-3.6.2-1.el7.x86_64.rpm
+    - centos7py36/python36-3.6.3-1.el7.x86_64.rpm
   skip_cleanup: true
   on:
     tags: true
